@@ -19,6 +19,16 @@
 yt-dlp is a feature-rich command-line audio/video downloader with support for [thousands of sites](supportedsites.md). The project is a fork of [youtube-dl](https://github.com/ytdl-org/youtube-dl) based on the now inactive [youtube-dlc](https://github.com/blackjack4494/yt-dlc).
 
 <!-- MANPAGE: MOVE "USAGE AND OPTIONS" SECTION HERE -->
+## Windows Quick Start
+### Windows Quick Start. 
+**Your goal is to have yt-dlp.exe, ffprobe.exe, ffplay.exe and ffmpeg.exe in a folder together, and Python installed.**  For simplicity, make a folder yt-dlp under Downloads, put stuff here.
+- [Python Downloads] (https://www.python.org/downloads/windows/). When asked, you don't need tkinter, IDLE or the test suites.
+- [ff executables](https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip). Copy three .exe from \bin to whatever folder holds yt-dlp.exe. 
+- Command prompt needs to be able to 'see' these executables. You can 'show' it their location permanently with this command: ` setx PATH "%PATH%;%USERPROFILE%\Downloads\yt-dlp" `. 
+
+Restart command prompt, and you should be good. To download a Youtube song as mp3, for example, do:
+`yt-dlp https://some-youtube-link.com/watch&v=12345 -t mp3`, replacing the link with whatever you'd like.
+Your downloads will go to whatever folder your command line itself is on, likely your User folder.
 
 <!-- MANPAGE: BEGIN EXCLUDED SECTION -->
 * [INSTALLATION](#installation)
